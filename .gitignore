@@ -1,0 +1,12 @@
+/.gradle/
+/.idea/
+/Anti-Fraud System/Authentication/
+/Anti-Fraud System/Authorization/
+/Anti-Fraud System/Feedback/
+/Anti-Fraud System/Rule-based system/
+/Anti-Fraud System/Simple transaction validation/
+/Anti-Fraud System/Stolen cards   suspicious IPs/
+/Anti-Fraud System/lesson-info.yaml
+/Topics/
+/course-info.yaml
+/course-remote-info.yaml

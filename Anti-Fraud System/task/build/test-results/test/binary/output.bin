@@ -1,0 +1,142 @@
+[1;31m
+Start test 1[0m
+
+)  .   ____          _            __ _ _
+* /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
++( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+, \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
++  '  |____| .__|_| |_|_| |_\__, | / / / /
+* =========|_|==============|___/=/_/_/_/
+, :: Spring Boot ::        (v2.3.1.RELEASE)
+
+…2022-08-11 10:30:20.933  INFO 21784 --- [    Test worker] antifraud.AntiFraudApplication           : Starting AntiFraudApplication on DESKTOP-1NFTNE0 with PID 21784 (started by pc in C:\Users\pc\Documents\Java Programs\Anti-Fraud System\Anti-Fraud System\task)
+¦2022-08-11 10:30:20.942  INFO 21784 --- [    Test worker] antifraud.AntiFraudApplication           : No active profile set, falling back to default profiles: default
+“2022-08-11 10:30:23.649  INFO 21784 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 28852 (http)
+2022-08-11 10:30:23.672  INFO 21784 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+•2022-08-11 10:30:23.672  INFO 21784 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+˜2022-08-11 10:30:23.897  INFO 21784 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+¥2022-08-11 10:30:23.899  INFO 21784 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2839 ms
+œ2022-08-11 10:30:24.447  INFO 21784 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+¢2022-08-11 10:30:24.593  INFO 21784 --- [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+›2022-08-11 10:30:25.003  INFO 21784 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+¢2022-08-11 10:30:25.087  INFO 21784 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 28852 (http) with context path ''
+«2022-08-11 10:30:25.110  INFO 21784 --- [    Test worker] antifraud.AntiFraudApplication           : Started AntiFraudApplication in 4.929 seconds (JVM running for 7.263)
+
+Test case
+*Testing api: '/api/antifraud/transaction'
+request: 'amount = 1'
+CExpectations: 'Result validating of Transaction must be 'ALLOWED''
+-----
+Ÿ2022-08-11 10:30:25.700  INFO 21784 --- [io-28852-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+Ž2022-08-11 10:30:25.700  INFO 21784 --- [io-28852-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+‡2022-08-11 10:30:25.727  INFO 21784 --- [io-28852-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 27 ms
+[1;31m
+Start test 2[0m
+
+Test case
+*Testing api: '/api/antifraud/transaction'
+request: 'amount = 199'
+CExpectations: 'Result validating of Transaction must be 'ALLOWED''
+-----
+[1;31m
+Start test 3[0m
+
+Test case
+*Testing api: '/api/antifraud/transaction'
+request: 'amount = 200'
+CExpectations: 'Result validating of Transaction must be 'ALLOWED''
+-----
+[1;31m
+Start test 4[0m
+
+Test case
+*Testing api: '/api/antifraud/transaction'
+request: 'amount = 201'
+MExpectations: 'Result validating of Transaction must be 'MANUAL_PROCESSING''
+-----
+[1;31m
+Start test 5[0m
+
+Test case
+*Testing api: '/api/antifraud/transaction'
+request: 'amount = 1499'
+MExpectations: 'Result validating of Transaction must be 'MANUAL_PROCESSING''
+-----
+[1;31m
+Start test 6[0m
+
+Test case
+*Testing api: '/api/antifraud/transaction'
+request: 'amount = 1500'
+MExpectations: 'Result validating of Transaction must be 'MANUAL_PROCESSING''
+-----
+[1;31m
+Start test 7[0m
+
+Test case
+*Testing api: '/api/antifraud/transaction'
+request: 'amount = 1501'
+FExpectations: 'Result validating of Transaction must be 'PROHIBITED''
+-----
+[1;31m
+Start test 8[0m
+
+Test case
+*Testing api: '/api/antifraud/transaction'
+request: 'amount = 2000'
+FExpectations: 'Result validating of Transaction must be 'PROHIBITED''
+-----
+[1;31m
+Start test 9[0m
+
+Test case
+*Testing api: '/api/antifraud/transaction'
+request: 'amount = -1'
+6Expectations: 'Response status must be 'Bad request''
+-----
+ç2022-08-11 10:30:26.538  WARN 21784 --- [io-28852-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public static org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.String>> antifraud.AntiFraudController.checkTransaction(antifraud.Transaction): [Field error in object 'transaction' on field 'amount': rejected value [-1]; codes [Min.transaction.amount,Min.amount,Min.java.lang.Long,Min]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [transaction.amount,amount]; arguments []; default message [amount],1]; default message [must be greater than or equal to 1]] ]
+[1;31m
+Start test 10[0m
+
+Test case
+*Testing api: '/api/antifraud/transaction'
+request: 'amount = 0'
+6Expectations: 'Response status must be 'Bad request''
+-----
+æ2022-08-11 10:30:26.576  WARN 21784 --- [o-28852-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public static org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.String>> antifraud.AntiFraudController.checkTransaction(antifraud.Transaction): [Field error in object 'transaction' on field 'amount': rejected value [0]; codes [Min.transaction.amount,Min.amount,Min.java.lang.Long,Min]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [transaction.amount,amount]; arguments []; default message [amount],1]; default message [must be greater than or equal to 1]] ]
+[1;31m
+Start test 11[0m
+
+Test case
+*Testing api: '/api/antifraud/transaction'
+request: 'amount = null'
+6Expectations: 'Response status must be 'Bad request''
+-----
+å2022-08-11 10:30:26.588  WARN 21784 --- [io-28852-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public static org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.String>> antifraud.AntiFraudController.checkTransaction(antifraud.Transaction): [Field error in object 'transaction' on field 'amount': rejected value [null]; codes [NotNull.transaction.amount,NotNull.amount,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [transaction.amount,amount]; arguments []; default message [amount]]; default message [must not be null]] ]
+[1;31m
+Start test 12[0m
+
+Test case
+*Testing api: '/api/antifraud/transaction'
+request: 'amount = ""'
+6Expectations: 'Response status must be 'Bad request''
+-----
+å2022-08-11 10:30:26.600  WARN 21784 --- [io-28852-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public static org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.String>> antifraud.AntiFraudController.checkTransaction(antifraud.Transaction): [Field error in object 'transaction' on field 'amount': rejected value [null]; codes [NotNull.transaction.amount,NotNull.amount,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [transaction.amount,amount]; arguments []; default message [amount]]; default message [must not be null]] ]
+[1;31m
+Start test 13[0m
+
+Test case
+*Testing api: '/api/antifraud/transaction'
+request: 'amount = " "'
+6Expectations: 'Response status must be 'Bad request''
+-----
+å2022-08-11 10:30:26.612  WARN 21784 --- [io-28852-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public static org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.String>> antifraud.AntiFraudController.checkTransaction(antifraud.Transaction): [Field error in object 'transaction' on field 'amount': rejected value [null]; codes [NotNull.transaction.amount,NotNull.amount,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [transaction.amount,amount]; arguments []; default message [amount]]; default message [must not be null]] ]
+[1;31m
+Start test 14[0m
+
+Test case
+*Testing api: '/api/antifraud/transaction'
+request: 'empty body'
+6Expectations: 'Response status must be 'Bad request''
+-----
+å2022-08-11 10:30:26.623  WARN 21784 --- [io-28852-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public static org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.String>> antifraud.AntiFraudController.checkTransaction(antifraud.Transaction): [Field error in object 'transaction' on field 'amount': rejected value [null]; codes [NotNull.transaction.amount,NotNull.amount,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [transaction.amount,amount]; arguments []; default message [amount]]; default message [must not be null]] ]
