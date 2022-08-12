@@ -1,5 +1,6 @@
 package antifraud;
 
+import antifraud.models.RoleType;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -28,7 +29,10 @@ public class WebSecurityConfigurerImpl extends WebSecurityConfigurerAdapter {
                 .authorizeRequests() // manage access
                 .mvcMatchers(HttpMethod.POST, "/api/auth/user").permitAll()
                 .mvcMatchers("/actuator/shutdown").permitAll() // needs to run test
-                .mvcMatchers("/api/auth/**", "/api/antifraud/**").authenticated()
+                .mvcMatchers("/api/auth/user/**", "api/auth/access", "api/auth/role").hasRole(RoleType.ROLE_ADMINISTRATOR.getRoleName())
+                .mvcMatchers(HttpMethod.GET, "/api/auth/list").hasAnyRole(RoleType.ROLE_ADMINISTRATOR.getRoleName(), RoleType.ROLE_SUPPORT.getRoleName())
+                .mvcMatchers(HttpMethod.POST, "/api/antifraud/transaction").hasRole(RoleType.ROLE_MERCHANT.getRoleName())
+                .mvcMatchers(HttpMethod.POST, "/api/antifraud/access").hasRole(RoleType.ROLE_ADMINISTRATOR.getRoleName())
                 .and()
                 .sessionManagement()
                 .sessionCreationPolicy(SessionCreationPolicy.STATELESS); // no session

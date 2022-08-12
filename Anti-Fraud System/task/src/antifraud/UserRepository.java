@@ -1,12 +1,12 @@
 package antifraud;
 
-import antifraud.models.User;
+import antifraud.models.UserDetailsImpl;
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.Optional;
 
-public interface UserRepository extends CrudRepository<User, Long> {
+public interface UserRepository extends CrudRepository<UserDetailsImpl, Long> {
 
-    Optional<User> findUserByUsername(String username);
+    Optional<UserDetailsImpl> findUserByUsername(String username);
 
 }

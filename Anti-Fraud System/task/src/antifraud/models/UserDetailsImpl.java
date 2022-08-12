@@ -1,25 +1,37 @@
 package antifraud.models;
 
 import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.validation.constraints.NotBlank;
 import java.util.Collection;
+import java.util.List;
 
+@Entity
 public class UserDetailsImpl implements UserDetails {
 
-    private final long id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long id;
 
-    private final String name;
+    @NotBlank
+    private String name;
 
-    private final String username;
-    private final String password;
+    @NotBlank
+    private String username;
 
-    public UserDetailsImpl(User user) {
-        id = user.getId();
-        name = user.getName();
-        username = user.getUsername();
-        password = user.getPassword();
-    }
+    @NotBlank
+    private String password;
+
+    private GrantedAuthority role;
+
+    private boolean isAccountNonLocked;
+
 
     public long getId() {
         return id;
@@ -31,7 +43,7 @@ public class UserDetailsImpl implements UserDetails {
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        return null;
+        return List.of(role);
     }
 
     @Override
@@ -51,7 +63,7 @@ public class UserDetailsImpl implements UserDetails {
 
     @Override
     public boolean isAccountNonLocked() {
-        return true;
+        return isAccountNonLocked;
     }
 
     @Override
@@ -62,5 +74,25 @@ public class UserDetailsImpl implements UserDetails {
     @Override
     public boolean isEnabled() {
         return true;
+    }
+
+    public void setRole(RoleType roleType) {
+        this.role = new SimpleGrantedAuthority(roleType.toString());
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public void setAccountNonLocked(boolean accountNonLocked) {
+        isAccountNonLocked = accountNonLocked;
     }
 }

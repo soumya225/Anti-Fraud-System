@@ -1,9 +1,11 @@
 package antifraud;
 
-import antifraud.models.User;
+import antifraud.models.RoleType;
 import antifraud.models.UserDetailsImpl;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
@@ -18,22 +20,22 @@ public class UserDetailsServiceImpl implements UserDetailsService {
     UserRepository userRepo;
 
     @Override
-    public UserDetailsImpl loadUserByUsername(String username) {
-        Optional<User> user = userRepo.findUserByUsername(username);
+    public UserDetailsImpl loadUserByUsername(String username) throws UsernameNotFoundException {
+        Optional<UserDetailsImpl> user = userRepo.findUserByUsername(username);
 
         if (user.isEmpty()) {
-            return null;
+            throw new UsernameNotFoundException("Not found: " + username);
         }
 
-        return new UserDetailsImpl(user.get());
+        return user.get();
     }
 
-    public void save(User user) {
+    public void save(UserDetailsImpl user) {
         userRepo.save(user);
     }
 
     public void delete(String username) throws UsernameNotFoundException {
-        Optional<User> user = userRepo.findUserByUsername(username);
+        Optional<UserDetailsImpl> user = userRepo.findUserByUsername(username);
 
         if (user.isEmpty()) {
             throw new UsernameNotFoundException("Not found: " + username);
@@ -45,10 +47,24 @@ public class UserDetailsServiceImpl implements UserDetailsService {
     public List<UserDetailsImpl> getAllUsers() {
         List<UserDetailsImpl> userDetailsList = new ArrayList<>();
 
-        userRepo.findAll().forEach(user -> {
-            userDetailsList.add(new UserDetailsImpl(user));
-        });
+        userRepo.findAll().forEach(userDetailsList::add);
 
         return  userDetailsList;
+    }
+
+    public void changeAccess(UserDetailsImpl user, boolean accountNonLocked) {
+        user.setAccountNonLocked(accountNonLocked);
+        userRepo.save(user);
+    }
+
+    public void changeRole(UserDetailsImpl user, RoleType roleType) throws IllegalArgumentException {
+        if(user.getAuthorities().stream()
+                .map(GrantedAuthority::getAuthority)
+                .anyMatch(r -> r.equals(roleType.toString()))) {
+            throw new IllegalArgumentException();
+        }
+
+        user.setRole(roleType);
+        userRepo.save(user);
     }
 }

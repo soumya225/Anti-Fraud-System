@@ -8,10 +8,13 @@ public class UserInfoReceipt {
 
     private String username;
 
-    public UserInfoReceipt(long id, String name, String username) {
+    private String role;
+
+    public UserInfoReceipt(long id, String name, String username, String role) {
         this.id = id;
         this.name = name;
         this.username = username;
+        this.role = role;
     }
 
     public long getId() {
@@ -36,5 +39,13 @@ public class UserInfoReceipt {
 
     public void setUsername(String username) {
         this.username = username;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
     }
 }
