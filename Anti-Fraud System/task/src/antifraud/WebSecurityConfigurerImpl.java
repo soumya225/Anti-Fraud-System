@@ -33,6 +33,7 @@ public class WebSecurityConfigurerImpl extends WebSecurityConfigurerAdapter {
                 .mvcMatchers(HttpMethod.GET, "/api/auth/list").hasAnyRole(RoleType.ROLE_ADMINISTRATOR.getRoleName(), RoleType.ROLE_SUPPORT.getRoleName())
                 .mvcMatchers(HttpMethod.POST, "/api/antifraud/transaction").hasRole(RoleType.ROLE_MERCHANT.getRoleName())
                 .mvcMatchers(HttpMethod.POST, "/api/antifraud/access").hasRole(RoleType.ROLE_ADMINISTRATOR.getRoleName())
+                .mvcMatchers("/api/antifraud/suspicious-ip/**", "/api/antifraud/stolencard/**").hasRole(RoleType.ROLE_SUPPORT.getRoleName())
                 .and()
                 .sessionManagement()
                 .sessionCreationPolicy(SessionCreationPolicy.STATELESS); // no session

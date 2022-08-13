@@ -9,34 +9,36 @@
 * =========|_|==============|___/=/_/_/_/
 , :: Spring Boot ::        (v2.3.1.RELEASE)
 
-Ö2022-08-12 16:03:13.229  INFO 17704 --- [    Test worker] antifraud.AntiFraudApplication           : Starting AntiFraudApplication on DESKTOP-1NFTNE0 with PID 17704 (started by pc in C:\Users\pc\Documents\Java Programs\Anti-Fraud System\Anti-Fraud System\task)
-¶2022-08-12 16:03:13.237  INFO 17704 --- [    Test worker] antifraud.AntiFraudApplication           : No active profile set, falling back to default profiles: default
-¢2022-08-12 16:03:17.746  INFO 17704 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-ª2022-08-12 16:03:17.924  INFO 17704 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 154ms. Found 1 JPA repository interfaces.
-ì2022-08-12 16:03:19.748  INFO 17704 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 28852 (http)
-2022-08-12 16:03:19.774  INFO 17704 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-ï2022-08-12 16:03:19.774  INFO 17704 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
-ò2022-08-12 16:03:20.005  INFO 17704 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-•2022-08-12 16:03:20.005  INFO 17704 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6611 ms
-Ä2022-08-12 16:03:20.428  INFO 17704 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-Ö2022-08-12 16:03:21.023  INFO 17704 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-∑2022-08-12 16:03:21.061  INFO 17704 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:file:../service_db'
-ú2022-08-12 16:03:21.418  INFO 17704 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-ü2022-08-12 16:03:21.543  INFO 17704 --- [         task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-ù2022-08-12 16:03:21.620  WARN 17704 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-ò2022-08-12 16:03:21.760  INFO 17704 --- [         task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
-¢2022-08-12 16:03:22.252  INFO 17704 --- [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-û2022-08-12 16:03:22.294  INFO 17704 --- [         task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-ü2022-08-12 16:03:22.705  INFO 17704 --- [         task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-õ2022-08-12 16:03:22.739  INFO 17704 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
-ü2022-08-12 16:03:22.889  INFO 17704 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1de73d37, org.springframework.security.web.context.SecurityContextPersistenceFilter@708769b7, org.springframework.security.web.header.HeaderWriterFilter@7c226095, org.springframework.security.web.authentication.logout.LogoutFilter@45707f76, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@608b35fa, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@135e49b2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@36238b12, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@31693a86, org.springframework.security.web.session.SessionManagementFilter@1716c037, org.springframework.security.web.access.ExceptionTranslationFilter@4f402027, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7b4b8199]
+Ö2022-08-13 12:56:58.905  INFO 10132 --- [    Test worker] antifraud.AntiFraudApplication           : Starting AntiFraudApplication on DESKTOP-1NFTNE0 with PID 10132 (started by pc in C:\Users\pc\Documents\Java Programs\Anti-Fraud System\Anti-Fraud System\task)
+¶2022-08-13 12:56:58.908  INFO 10132 --- [    Test worker] antifraud.AntiFraudApplication           : No active profile set, falling back to default profiles: default
+¢2022-08-13 12:57:00.383  INFO 10132 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+ª2022-08-13 12:57:00.503  INFO 10132 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 104ms. Found 3 JPA repository interfaces.
+ì2022-08-13 12:57:01.400  INFO 10132 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 28852 (http)
+2022-08-13 12:57:01.414  INFO 10132 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+ï2022-08-13 12:57:01.415  INFO 10132 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+ò2022-08-13 12:57:01.542  INFO 10132 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+•2022-08-13 12:57:01.542  INFO 10132 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2573 ms
+Ä2022-08-13 12:57:01.740  INFO 10132 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+Ö2022-08-13 12:57:02.039  INFO 10132 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+∑2022-08-13 12:57:02.055  INFO 10132 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:file:../service_db'
+ú2022-08-13 12:57:02.271  INFO 10132 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+ü2022-08-13 12:57:02.353  INFO 10132 --- [         task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+ù2022-08-13 12:57:02.412  WARN 10132 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+ò2022-08-13 12:57:02.480  INFO 10132 --- [         task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+û2022-08-13 12:57:02.781  INFO 10132 --- [         task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+¢2022-08-13 12:57:02.804  INFO 10132 --- [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+ü2022-08-13 12:57:03.023  INFO 10132 --- [         task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+õ2022-08-13 12:57:03.118  INFO 10132 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+ü2022-08-13 12:57:03.205  INFO 10132 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1bec1589, org.springframework.security.web.context.SecurityContextPersistenceFilter@72715e61, org.springframework.security.web.header.HeaderWriterFilter@6df2af02, org.springframework.security.web.authentication.logout.LogoutFilter@2830315f, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5f6e2ad9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5a6195b8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@59d5c537, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@57f0bfc3, org.springframework.security.web.session.SessionManagementFilter@10745a02, org.springframework.security.web.access.ExceptionTranslationFilter@6501b105, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@66b6873f]
+rHibernate: create table card (id bigint generated by default as identity, number varchar(255), primary key (id))
+lHibernate: create table ip (id bigint generated by default as identity, ip varchar(255), primary key (id))
 ÂHibernate: create table user_details_impl (id bigint generated by default as identity, is_account_non_locked boolean not null, name varchar(255), password varchar(255), role binary(255), username varchar(255), primary key (id))
-Ÿ2022-08-12 16:03:24.770  INFO 17704 --- [         task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-©2022-08-12 16:03:24.787  INFO 17704 --- [         task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-¢2022-08-12 16:03:25.029  INFO 17704 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 28852 (http) with context path ''
-ß2022-08-12 16:03:25.031  INFO 17704 --- [    Test worker] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories‚Ä¶
-ã2022-08-12 16:03:25.618  INFO 17704 --- [    Test worker] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
-≠2022-08-12 16:03:25.639  INFO 17704 --- [    Test worker] antifraud.AntiFraudApplication           : Started AntiFraudApplication in 13.441 seconds (JVM running for 15.267)
+Ÿ2022-08-13 12:57:04.283  INFO 10132 --- [         task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+©2022-08-13 12:57:04.302  INFO 10132 --- [         task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+¢2022-08-13 12:57:04.532  INFO 10132 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 28852 (http) with context path ''
+ß2022-08-13 12:57:04.534  INFO 10132 --- [    Test worker] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories‚Ä¶
+ã2022-08-13 12:57:05.043  INFO 10132 --- [    Test worker] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+´2022-08-13 12:57:05.061  INFO 10132 --- [    Test worker] antifraud.AntiFraudApplication           : Started AntiFraudApplication in 6.705 seconds (JVM running for 7.694)
 
 Test case
 Testing api: '/api/auth/user'
@@ -46,10 +48,9 @@ Test case
 }'
 hExpectations: 'In case of wrong data in request, endpoint must respond with BAD REQUEST  status (400).'
 -----
-ü2022-08-12 16:03:26.311  INFO 17704 --- [io-28852-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-é2022-08-12 16:03:26.312  INFO 17704 --- [io-28852-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-á2022-08-12 16:03:26.327  INFO 17704 --- [io-28852-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
-˙2022-08-12 16:03:26.679  WARN 17704 --- [io-28852-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<antifraud.models.UserInfoReceipt> antifraud.controllers.AuthController.registerUser(antifraud.models.UserDetailsImpl): [Field error in object 'userDetailsImpl' on field 'username': rejected value [null]; codes [NotBlank.userDetailsImpl.username,NotBlank.username,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDetailsImpl.username,username]; arguments []; default message [username]]; default message [must not be blank]] ]
+ü2022-08-13 12:57:06.279  INFO 10132 --- [io-28852-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+é2022-08-13 12:57:06.279  INFO 10132 --- [io-28852-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+á2022-08-13 12:57:06.303  INFO 10132 --- [io-28852-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 23 ms
 [1;31m
 Start test 2[0m
 
@@ -61,7 +62,6 @@ Test case
 }'
 hExpectations: 'In case of wrong data in request, endpoint must respond with BAD REQUEST  status (400).'
 -----
-˙2022-08-12 16:03:26.769  WARN 17704 --- [io-28852-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<antifraud.models.UserInfoReceipt> antifraud.controllers.AuthController.registerUser(antifraud.models.UserDetailsImpl): [Field error in object 'userDetailsImpl' on field 'password': rejected value [null]; codes [NotBlank.userDetailsImpl.password,NotBlank.password,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDetailsImpl.password,password]; arguments []; default message [password]]; default message [must not be blank]] ]
 [1;31m
 Start test 3[0m
 
@@ -74,8 +74,8 @@ Test case
 }'
 bExpectations: 'If user successfully added, endpoint must respond with HTTP CREATED status (201) '
 -----
-ëHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_
-ØHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_ where userdetail0_.username=?
+ëHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
 ÉHibernate: insert into user_details_impl (id, is_account_non_locked, name, password, role, username) values (null, ?, ?, ?, ?, ?)
 [1;31m
 Start test 4[0m
@@ -84,8 +84,8 @@ Test case
 Testing api: '/api/auth/list'
 óExpectations: 'Endpoint must respond with HTTP OK status (200) and body with array of objects representing the users sorted by ID in ascending order.'
 -----
-ØHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_ where userdetail0_.username=?
-ëHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
+ëHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_
 [1;31m
 Start test 5[0m
 
@@ -98,8 +98,8 @@ Test case
 }'
 bExpectations: 'If user successfully added, endpoint must respond with HTTP CREATED status (201) '
 -----
-ëHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_
-ØHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_ where userdetail0_.username=?
+ëHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
 ÉHibernate: insert into user_details_impl (id, is_account_non_locked, name, password, role, username) values (null, ?, ?, ?, ?, ?)
 [1;31m
 Start test 6[0m
@@ -108,8 +108,8 @@ Test case
 Testing api: '/api/auth/list'
 óExpectations: 'Endpoint must respond with HTTP OK status (200) and body with array of objects representing the users sorted by ID in ascending order.'
 -----
-ØHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_ where userdetail0_.username=?
-ëHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
+ëHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_
 [1;31m
 Start test 7[0m
 
@@ -117,7 +117,7 @@ Test case
 Testing api: '/api/auth/list'
 AExpectations: 'A user with incorrect credentials is not allowed'
 -----
-ØHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_ where userdetail0_.username=?
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
 [1;31m
 Start test 8[0m
 
@@ -125,7 +125,7 @@ Test case
 Testing api: '/api/auth/list'
 AExpectations: 'A user with incorrect credentials is not allowed'
 -----
-ØHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_ where userdetail0_.username=?
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
 [1;31m
 Start test 9[0m
 
@@ -133,7 +133,7 @@ Test case
 *Testing api: '/api/antifraud/transaction'
 ;Expectations: 'Merchant after registration must be LOCKED'
 -----
-ØHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_ where userdetail0_.username=?
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
 [1;31m
 Start test 10[0m
 
@@ -141,8 +141,8 @@ Test case
  Testing api: '/api/auth/access'
 1Expectations: 'A user johndoe1 must be UNLOCKED'
 -----
-ØHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_ where userdetail0_.username=?
-ØHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_ where userdetail0_.username=?
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
 tHibernate: update user_details_impl set is_account_non_locked=?, name=?, password=?, role=?, username=? where id=?
 [1;31m
 Start test 11[0m
@@ -151,7 +151,9 @@ Test case
 *Testing api: '/api/antifraud/transaction'
 1Expectations: 'A user johndoe1 must be UNLOCKED'
 -----
-ØHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_ where userdetail0_.username=?
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
+UHibernate: select ip0_.id as id1_1_, ip0_.ip as ip2_1_ from ip ip0_ where ip0_.ip=?
+kHibernate: select card0_.id as id1_0_, card0_.number as number2_0_ from card card0_ where card0_.number=?
 [1;31m
 Start test 12[0m
 
@@ -160,13 +162,15 @@ Test case
 request: 'amount = 1'
 CExpectations: 'Result validating of Transaction must be 'ALLOWED''
 -----
-ØHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_ where userdetail0_.username=?
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
+UHibernate: select ip0_.id as id1_1_, ip0_.ip as ip2_1_ from ip ip0_ where ip0_.ip=?
+kHibernate: select card0_.id as id1_0_, card0_.number as number2_0_ from card card0_ where card0_.number=?
 [1;31m
 Start test 13[0m
-•2022-08-12 16:03:29.705  INFO 17704 --- [     Thread-336] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-ù2022-08-12 16:03:29.728  INFO 17704 --- [     Thread-336] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-ä2022-08-12 16:03:29.733  INFO 17704 --- [     Thread-336] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-à2022-08-12 16:03:29.789  INFO 17704 --- [     Thread-336] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+•2022-08-13 12:57:09.369  INFO 10132 --- [     Thread-336] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+ù2022-08-13 12:57:09.373  INFO 10132 --- [     Thread-336] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+ä2022-08-13 12:57:09.375  INFO 10132 --- [     Thread-336] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+à2022-08-13 12:57:09.396  INFO 10132 --- [     Thread-336] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
 
 )  .   ____          _            __ _ _
 * /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -176,31 +180,31 @@ Test case
 * =========|_|==============|___/=/_/_/_/
 , :: Spring Boot ::        (v2.3.1.RELEASE)
 
-Ö2022-08-12 16:03:30.031  INFO 17704 --- [    Test worker] antifraud.AntiFraudApplication           : Starting AntiFraudApplication on DESKTOP-1NFTNE0 with PID 17704 (started by pc in C:\Users\pc\Documents\Java Programs\Anti-Fraud System\Anti-Fraud System\task)
-¶2022-08-12 16:03:30.032  INFO 17704 --- [    Test worker] antifraud.AntiFraudApplication           : No active profile set, falling back to default profiles: default
-¢2022-08-12 16:03:30.966  INFO 17704 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-∫2022-08-12 16:03:30.986  INFO 17704 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19ms. Found 1 JPA repository interfaces.
-ì2022-08-12 16:03:31.164  INFO 17704 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 28852 (http)
-2022-08-12 16:03:31.166  INFO 17704 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-ï2022-08-12 16:03:31.167  INFO 17704 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
-ò2022-08-12 16:03:31.244  INFO 17704 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-•2022-08-12 16:03:31.244  INFO 17704 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1205 ms
-Ä2022-08-12 16:03:31.310  INFO 17704 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
-Ö2022-08-12 16:03:31.323  INFO 17704 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
-∑2022-08-12 16:03:31.323  INFO 17704 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:file:../service_db'
-ú2022-08-12 16:03:31.397  INFO 17704 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-ü2022-08-12 16:03:31.406  INFO 17704 --- [         task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-ü2022-08-12 16:03:31.423  INFO 17704 --- [         task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-ù2022-08-12 16:03:31.466  WARN 17704 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-Ÿ2022-08-12 16:03:31.527  INFO 17704 --- [         task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-©2022-08-12 16:03:31.528  INFO 17704 --- [         task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-¢2022-08-12 16:03:31.565  INFO 17704 --- [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-õ2022-08-12 16:03:31.717  INFO 17704 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
-û2022-08-12 16:03:31.735  INFO 17704 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@59b3f162, org.springframework.security.web.context.SecurityContextPersistenceFilter@4eace42b, org.springframework.security.web.header.HeaderWriterFilter@43549c6c, org.springframework.security.web.authentication.logout.LogoutFilter@418bdde9, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@13e0f380, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6f87a7c7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@857f1a7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7ade62a6, org.springframework.security.web.session.SessionManagementFilter@7792e14f, org.springframework.security.web.access.ExceptionTranslationFilter@49cd08f9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4ef28dc4]
-¢2022-08-12 16:03:31.854  INFO 17704 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 28852 (http) with context path ''
-ß2022-08-12 16:03:31.856  INFO 17704 --- [    Test worker] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories‚Ä¶
-ã2022-08-12 16:03:31.903  INFO 17704 --- [    Test worker] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
-´2022-08-12 16:03:31.911  INFO 17704 --- [    Test worker] antifraud.AntiFraudApplication           : Started AntiFraudApplication in 2.007 seconds (JVM running for 21.54)
+Ö2022-08-13 12:57:09.575  INFO 10132 --- [    Test worker] antifraud.AntiFraudApplication           : Starting AntiFraudApplication on DESKTOP-1NFTNE0 with PID 10132 (started by pc in C:\Users\pc\Documents\Java Programs\Anti-Fraud System\Anti-Fraud System\task)
+¶2022-08-13 12:57:09.575  INFO 10132 --- [    Test worker] antifraud.AntiFraudApplication           : No active profile set, falling back to default profiles: default
+¢2022-08-13 12:57:11.172  INFO 10132 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+∫2022-08-13 12:57:11.196  INFO 10132 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23ms. Found 3 JPA repository interfaces.
+ì2022-08-13 12:57:11.324  INFO 10132 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 28852 (http)
+2022-08-13 12:57:11.325  INFO 10132 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+ï2022-08-13 12:57:11.326  INFO 10132 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+ò2022-08-13 12:57:11.375  INFO 10132 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+•2022-08-13 12:57:11.375  INFO 10132 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1797 ms
+Ä2022-08-13 12:57:11.436  INFO 10132 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+Ö2022-08-13 12:57:11.449  INFO 10132 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+∑2022-08-13 12:57:11.449  INFO 10132 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:file:../service_db'
+ú2022-08-13 12:57:11.529  INFO 10132 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+ü2022-08-13 12:57:11.538  INFO 10132 --- [         task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+ü2022-08-13 12:57:11.553  INFO 10132 --- [         task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+ù2022-08-13 12:57:11.585  WARN 10132 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+Ÿ2022-08-13 12:57:11.688  INFO 10132 --- [         task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+©2022-08-13 12:57:11.689  INFO 10132 --- [         task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+¢2022-08-13 12:57:11.698  INFO 10132 --- [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+õ2022-08-13 12:57:11.865  INFO 10132 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+ü2022-08-13 12:57:11.883  INFO 10132 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6fd2acf5, org.springframework.security.web.context.SecurityContextPersistenceFilter@2979c6ef, org.springframework.security.web.header.HeaderWriterFilter@137d04d8, org.springframework.security.web.authentication.logout.LogoutFilter@646bf8a6, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4a094f90, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1af6974c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@61d61b0e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@45a9cf78, org.springframework.security.web.session.SessionManagementFilter@25b8f9d2, org.springframework.security.web.access.ExceptionTranslationFilter@697b48e4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6d035815]
+¢2022-08-13 12:57:12.166  INFO 10132 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 28852 (http) with context path ''
+ß2022-08-13 12:57:12.168  INFO 10132 --- [    Test worker] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories‚Ä¶
+ã2022-08-13 12:57:12.335  INFO 10132 --- [    Test worker] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+¨2022-08-13 12:57:12.348  INFO 10132 --- [    Test worker] antifraud.AntiFraudApplication           : Started AntiFraudApplication in 2.842 seconds (JVM running for 14.981)
 [1;31m
 Start test 14[0m
 
@@ -208,11 +212,11 @@ Test case
 Testing api: '/api/auth/list'
 .Expectations: 'After restart user must exist'
 -----
-ü2022-08-12 16:03:31.921  INFO 17704 --- [io-28852-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-é2022-08-12 16:03:31.922  INFO 17704 --- [io-28852-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-Ü2022-08-12 16:03:31.925  INFO 17704 --- [io-28852-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
-ØHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_ where userdetail0_.username=?
-ëHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_
+ü2022-08-13 12:57:12.361  INFO 10132 --- [io-28852-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+é2022-08-13 12:57:12.362  INFO 10132 --- [io-28852-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+Ü2022-08-13 12:57:12.366  INFO 10132 --- [io-28852-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
+ëHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_
 [1;31m
 Start test 15[0m
 
@@ -225,8 +229,8 @@ Test case
 }'
 {Expectations: 'In case of an attempt to register an existing user, endpoint must respond with HTTP CONFLICT status (409).'
 -----
-ëHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_
-ØHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_ where userdetail0_.username=?
+ëHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
 [1;31m
 Start test 16[0m
 
@@ -239,8 +243,8 @@ Test case
 }'
 bExpectations: 'If user successfully added, endpoint must respond with HTTP CREATED status (201) '
 -----
-ëHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_
-ØHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_ where userdetail0_.username=?
+ëHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
 ÉHibernate: insert into user_details_impl (id, is_account_non_locked, name, password, role, username) values (null, ?, ?, ?, ?, ?)
 [1;31m
 Start test 17[0m
@@ -249,8 +253,8 @@ Test case
 Testing api: '/api/auth/list'
 óExpectations: 'Endpoint must respond with HTTP OK status (200) and body with array of objects representing the users sorted by ID in ascending order.'
 -----
-ØHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_ where userdetail0_.username=?
-ëHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
+ëHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_
 [1;31m
 Start test 18[0m
 
@@ -259,7 +263,9 @@ Test case
 request: 'amount = 199'
 CExpectations: 'Result validating of Transaction must be 'ALLOWED''
 -----
-ØHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_ where userdetail0_.username=?
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
+UHibernate: select ip0_.id as id1_1_, ip0_.ip as ip2_1_ from ip ip0_ where ip0_.ip=?
+kHibernate: select card0_.id as id1_0_, card0_.number as number2_0_ from card card0_ where card0_.number=?
 [1;31m
 Start test 19[0m
 
@@ -268,7 +274,9 @@ Test case
 request: 'amount = 200'
 CExpectations: 'Result validating of Transaction must be 'ALLOWED''
 -----
-ØHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_ where userdetail0_.username=?
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
+UHibernate: select ip0_.id as id1_1_, ip0_.ip as ip2_1_ from ip ip0_ where ip0_.ip=?
+kHibernate: select card0_.id as id1_0_, card0_.number as number2_0_ from card card0_ where card0_.number=?
 [1;31m
 Start test 20[0m
 
@@ -277,7 +285,9 @@ Test case
 request: 'amount = 201'
 MExpectations: 'Result validating of Transaction must be 'MANUAL_PROCESSING''
 -----
-ØHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_ where userdetail0_.username=?
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
+UHibernate: select ip0_.id as id1_1_, ip0_.ip as ip2_1_ from ip ip0_ where ip0_.ip=?
+kHibernate: select card0_.id as id1_0_, card0_.number as number2_0_ from card card0_ where card0_.number=?
 [1;31m
 Start test 21[0m
 
@@ -286,7 +296,9 @@ Test case
 request: 'amount = 1499'
 MExpectations: 'Result validating of Transaction must be 'MANUAL_PROCESSING''
 -----
-ØHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_ where userdetail0_.username=?
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
+UHibernate: select ip0_.id as id1_1_, ip0_.ip as ip2_1_ from ip ip0_ where ip0_.ip=?
+kHibernate: select card0_.id as id1_0_, card0_.number as number2_0_ from card card0_ where card0_.number=?
 [1;31m
 Start test 22[0m
 
@@ -295,7 +307,9 @@ Test case
 request: 'amount = 1500'
 MExpectations: 'Result validating of Transaction must be 'MANUAL_PROCESSING''
 -----
-ØHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_ where userdetail0_.username=?
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
+UHibernate: select ip0_.id as id1_1_, ip0_.ip as ip2_1_ from ip ip0_ where ip0_.ip=?
+kHibernate: select card0_.id as id1_0_, card0_.number as number2_0_ from card card0_ where card0_.number=?
 [1;31m
 Start test 23[0m
 
@@ -304,7 +318,9 @@ Test case
 request: 'amount = 1501'
 FExpectations: 'Result validating of Transaction must be 'PROHIBITED''
 -----
-ØHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_ where userdetail0_.username=?
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
+UHibernate: select ip0_.id as id1_1_, ip0_.ip as ip2_1_ from ip ip0_ where ip0_.ip=?
+kHibernate: select card0_.id as id1_0_, card0_.number as number2_0_ from card card0_ where card0_.number=?
 [1;31m
 Start test 24[0m
 
@@ -313,7 +329,9 @@ Test case
 request: 'amount = 2000'
 FExpectations: 'Result validating of Transaction must be 'PROHIBITED''
 -----
-ØHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_ where userdetail0_.username=?
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
+UHibernate: select ip0_.id as id1_1_, ip0_.ip as ip2_1_ from ip ip0_ where ip0_.ip=?
+kHibernate: select card0_.id as id1_0_, card0_.number as number2_0_ from card card0_ where card0_.number=?
 [1;31m
 Start test 25[0m
 
@@ -322,8 +340,7 @@ Test case
 request: 'amount = -1'
 6Expectations: 'Response status must be 'Bad request''
 -----
-ØHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_ where userdetail0_.username=?
-˙2022-08-12 16:03:33.843  WARN 17704 --- [io-28852-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public static org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.String>> antifraud.controllers.AntiFraudController.checkTransaction(antifraud.models.Transaction): [Field error in object 'transaction' on field 'amount': rejected value [-1]; codes [Min.transaction.amount,Min.amount,Min.java.lang.Long,Min]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [transaction.amount,amount]; arguments []; default message [amount],1]; default message [must be greater than or equal to 1]] ]
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
 [1;31m
 Start test 26[0m
 
@@ -332,8 +349,7 @@ Test case
 request: 'amount = 0'
 6Expectations: 'Response status must be 'Bad request''
 -----
-ØHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_ where userdetail0_.username=?
-˘2022-08-12 16:03:33.976  WARN 17704 --- [io-28852-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public static org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.String>> antifraud.controllers.AntiFraudController.checkTransaction(antifraud.models.Transaction): [Field error in object 'transaction' on field 'amount': rejected value [0]; codes [Min.transaction.amount,Min.amount,Min.java.lang.Long,Min]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [transaction.amount,amount]; arguments []; default message [amount],1]; default message [must be greater than or equal to 1]] ]
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
 [1;31m
 Start test 27[0m
 
@@ -342,8 +358,7 @@ Test case
 request: 'amount = null'
 6Expectations: 'Response status must be 'Bad request''
 -----
-ØHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_ where userdetail0_.username=?
-¯2022-08-12 16:03:34.101  WARN 17704 --- [io-28852-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public static org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.String>> antifraud.controllers.AntiFraudController.checkTransaction(antifraud.models.Transaction): [Field error in object 'transaction' on field 'amount': rejected value [null]; codes [NotNull.transaction.amount,NotNull.amount,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [transaction.amount,amount]; arguments []; default message [amount]]; default message [must not be null]] ]
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
 [1;31m
 Start test 28[0m
 
@@ -352,8 +367,7 @@ Test case
 request: 'amount = ""'
 6Expectations: 'Response status must be 'Bad request''
 -----
-ØHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_ where userdetail0_.username=?
-¯2022-08-12 16:03:34.221  WARN 17704 --- [io-28852-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public static org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.String>> antifraud.controllers.AntiFraudController.checkTransaction(antifraud.models.Transaction): [Field error in object 'transaction' on field 'amount': rejected value [null]; codes [NotNull.transaction.amount,NotNull.amount,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [transaction.amount,amount]; arguments []; default message [amount]]; default message [must not be null]] ]
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
 [1;31m
 Start test 29[0m
 
@@ -362,8 +376,7 @@ Test case
 request: 'amount = " "'
 6Expectations: 'Response status must be 'Bad request''
 -----
-ØHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_ where userdetail0_.username=?
-¯2022-08-12 16:03:34.345  WARN 17704 --- [o-28852-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public static org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.String>> antifraud.controllers.AntiFraudController.checkTransaction(antifraud.models.Transaction): [Field error in object 'transaction' on field 'amount': rejected value [null]; codes [NotNull.transaction.amount,NotNull.amount,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [transaction.amount,amount]; arguments []; default message [amount]]; default message [must not be null]] ]
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
 [1;31m
 Start test 30[0m
 
@@ -372,8 +385,7 @@ Test case
 request: 'empty body'
 6Expectations: 'Response status must be 'Bad request''
 -----
-ØHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_ where userdetail0_.username=?
-¯2022-08-12 16:03:34.494  WARN 17704 --- [io-28852-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public static org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.String>> antifraud.controllers.AntiFraudController.checkTransaction(antifraud.models.Transaction): [Field error in object 'transaction' on field 'amount': rejected value [null]; codes [NotNull.transaction.amount,NotNull.amount,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [transaction.amount,amount]; arguments []; default message [amount]]; default message [must not be null]] ]
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
 [1;31m
 Start test 31[0m
 
@@ -382,8 +394,8 @@ Test case
 #request: '/api/auth/user/somebody'
 RExpectations: 'If a user is not found, respond with HTTP Not Found status (404).'
 -----
-ØHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_ where userdetail0_.username=?
-ØHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_ where userdetail0_.username=?
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
 [1;31m
 Start test 32[0m
 
@@ -392,8 +404,8 @@ Test case
 #request: '/api/auth/user/johndoe1'
 XExpectations: 'The endpoint must delete the user and respond with HTTP OK status (200)'
 -----
-ØHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_ where userdetail0_.username=?
-ØHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_ where userdetail0_.username=?
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
 5Hibernate: delete from user_details_impl where id=?
 [1;31m
 Start test 33[0m
@@ -402,8 +414,8 @@ Test case
 Testing api: '/api/auth/list'
 /Expectations: 'User 'johndoe1' must be delete'
 -----
-ØHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_ where userdetail0_.username=?
-ëHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
+ëHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_
 [1;31m
 Start test 34[0m
 
@@ -411,8 +423,8 @@ Test case
 Testing api: '/api/auth/role'
 dExpectations: 'If a user is not found, endpoint must respond with the HTTP Not Found status (404).'
 -----
-ØHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_ where userdetail0_.username=?
-ØHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_ where userdetail0_.username=?
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
 [1;31m
 Start test 35[0m
 
@@ -420,8 +432,8 @@ Test case
 Testing api: '/api/auth/role'
 fExpectations: 'If a role is not found, endpoint must respond with the HTTP Bad Request status (400).'
 -----
-ØHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_ where userdetail0_.username=?
-ØHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_ where userdetail0_.username=?
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
 [1;31m
 Start test 36[0m
 
@@ -429,8 +441,8 @@ Test case
 Testing api: '/api/auth/role'
 jExpectations: 'If a role is ADMINISTRATOR, endpoint must respond with the HTTP Bad Request status (400).'
 -----
-ØHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_ where userdetail0_.username=?
-ØHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_ where userdetail0_.username=?
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
 [1;31m
 Start test 37[0m
 
@@ -438,8 +450,8 @@ Test case
 Testing api: '/api/auth/role'
 VExpectations: 'If a role successfully changed, respond with the HTTP OK status (200)'
 -----
-ØHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_ where userdetail0_.username=?
-ØHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_ where userdetail0_.username=?
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
 tHibernate: update user_details_impl set is_account_non_locked=?, name=?, password=?, role=?, username=? where id=?
 [1;31m
 Start test 38[0m
@@ -448,8 +460,8 @@ Test case
 Testing api: '/api/auth/role'
 qExpectations: 'If a role already assigned to a user, endpoint must respond with the HTTP Conflict status (409).'
 -----
-ØHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_ where userdetail0_.username=?
-ØHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_ where userdetail0_.username=?
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
 [1;31m
 Start test 39[0m
 
@@ -457,8 +469,8 @@ Test case
  Testing api: '/api/auth/access'
 1Expectations: 'A user johndoe2 must be UNLOCKED'
 -----
-ØHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_ where userdetail0_.username=?
-ØHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_ where userdetail0_.username=?
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
 tHibernate: update user_details_impl set is_account_non_locked=?, name=?, password=?, role=?, username=? where id=?
 [1;31m
 Start test 40[0m
@@ -467,8 +479,8 @@ Test case
 Testing api: '/api/auth/list'
 DExpectations: 'Role for user 'johndoe2' must be changed to SUPPORT'
 -----
-ØHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_ where userdetail0_.username=?
-ëHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
+ëHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_
 [1;31m
 Start test 41[0m
 
@@ -476,7 +488,7 @@ Test case
 *Testing api: '/api/antifraud/transaction'
 BExpectations: 'Role MERCHANT must be removed from user johndoe2!'
 -----
-ØHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_ where userdetail0_.username=?
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
 [1;31m
 Start test 42[0m
 
@@ -489,8 +501,8 @@ Test case
 }'
 bExpectations: 'If user successfully added, endpoint must respond with HTTP CREATED status (201) '
 -----
-ëHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_
-ØHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_ where userdetail0_.username=?
+ëHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
 ÉHibernate: insert into user_details_impl (id, is_account_non_locked, name, password, role, username) values (null, ?, ?, ?, ?, ?)
 [1;31m
 Start test 43[0m
@@ -499,7 +511,7 @@ Test case
 *Testing api: '/api/antifraud/transaction'
 @Expectations: 'MERCHANT user after registration must be LOCKED'
 -----
-ØHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_ where userdetail0_.username=?
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
 [1;31m
 Start test 44[0m
 
@@ -507,8 +519,8 @@ Test case
  Testing api: '/api/auth/access'
 1Expectations: 'A user johndoe3 must be UNLOCKED'
 -----
-ØHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_ where userdetail0_.username=?
-ØHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_ where userdetail0_.username=?
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
 tHibernate: update user_details_impl set is_account_non_locked=?, name=?, password=?, role=?, username=? where id=?
 [1;31m
 Start test 45[0m
@@ -517,7 +529,9 @@ Test case
 *Testing api: '/api/antifraud/transaction'
 1Expectations: 'A user johndoe3 must be UNLOCKED'
 -----
-ØHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_ where userdetail0_.username=?
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
+UHibernate: select ip0_.id as id1_1_, ip0_.ip as ip2_1_ from ip ip0_ where ip0_.ip=?
+kHibernate: select card0_.id as id1_0_, card0_.number as number2_0_ from card card0_ where card0_.number=?
 [1;31m
 Start test 46[0m
 
@@ -525,8 +539,8 @@ Test case
  Testing api: '/api/auth/access'
 /Expectations: 'A user johndoe3 must be LOCKED'
 -----
-ØHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_ where userdetail0_.username=?
-ØHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_ where userdetail0_.username=?
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
 tHibernate: update user_details_impl set is_account_non_locked=?, name=?, password=?, role=?, username=? where id=?
 [1;31m
 Start test 47[0m
@@ -535,7 +549,7 @@ Test case
 *Testing api: '/api/antifraud/transaction'
 /Expectations: 'A user johndoe3 must be LOCKED'
 -----
-ØHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_ where userdetail0_.username=?
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
 [1;31m
 Start test 48[0m
 
@@ -543,8 +557,8 @@ Test case
  Testing api: '/api/auth/access'
 1Expectations: 'A user johndoe3 must be UNLOCKED'
 -----
-ØHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_ where userdetail0_.username=?
-ØHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_ where userdetail0_.username=?
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
 tHibernate: update user_details_impl set is_account_non_locked=?, name=?, password=?, role=?, username=? where id=?
 [1;31m
 Start test 49[0m
@@ -553,159 +567,393 @@ Test case
 *Testing api: '/api/antifraud/transaction'
 bExpectations: 'A user with role ADMINISTRATOR must not have access to /api/antifraud/transaction'
 -----
-ØHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_ where userdetail0_.username=?
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
 [1;31m
 Start test 50[0m
-
-Test case
-+Testing api: '/api/antifraud/transaction/'
-cExpectations: 'A user with role ADMINISTRATOR must not have access to /api/antifraud/transaction/'
------
-ØHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_ where userdetail0_.username=?
-[1;31m
-Start test 51[0m
 
 Test case
 *Testing api: '/api/antifraud/transaction'
 \Expectations: 'A user with role SUPPORT must not have access to /api/antifraud/transaction'
 -----
-ØHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_ where userdetail0_.username=?
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
 [1;31m
-Start test 52[0m
-
-Test case
-+Testing api: '/api/antifraud/transaction/'
-]Expectations: 'A user with role SUPPORT must not have access to /api/antifraud/transaction/'
------
-ØHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_ where userdetail0_.username=?
-[1;31m
-Start test 53[0m
+Start test 51[0m
 
 Test case
 *Testing api: '/api/antifraud/transaction'
 ^Expectations: 'A user with role ANONYMOUS must not have access to /api/antifraud/transaction'
 -----
 [1;31m
-Start test 54[0m
+Start test 52[0m
 
 Test case
 Testing api: '/api/auth/user'
 YExpectations: 'A user with role ANONYMOUS must not have access to DELETE /api/auth/user'
 -----
 [1;31m
-Start test 55[0m
+Start test 53[0m
 
 Test case
 Testing api: '/api/auth/user'
 WExpectations: 'A user with role SUPPORT must not have access to DELETE /api/auth/user'
 -----
-ØHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_ where userdetail0_.username=?
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
 [1;31m
-Start test 56[0m
+Start test 54[0m
 
 Test case
 Testing api: '/api/auth/user'
 XExpectations: 'A user with role MERCHANT must not have access to DELETE /api/auth/user'
 -----
-ØHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_ where userdetail0_.username=?
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
 [1;31m
-Start test 57[0m
-
-Test case
-Testing api: '/api/auth/user'
-XExpectations: 'A user with role MERCHANT must not have access to DELETE /api/auth/user'
------
-ØHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_ where userdetail0_.username=?
-[1;31m
-Start test 58[0m
+Start test 55[0m
 
 Test case
 Testing api: '/api/auth/list'
 RExpectations: 'A user with role ANONYMOUS must not have access to /api/auth/list'
 -----
 [1;31m
-Start test 59[0m
+Start test 56[0m
 
 Test case
 Testing api: '/api/auth/list'
 QExpectations: 'A user with role MERCHANT must not have access to /api/auth/list'
 -----
-ØHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_ where userdetail0_.username=?
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
+[1;31m
+Start test 57[0m
+
+Test case
+,Testing api: '/api/antifraud/suspicious-ip'
+hExpectations: 'A user with role ADMINISTRATOR must not have access to GET /api/antifraud/suspicious-ip'
+-----
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
+[1;31m
+Start test 58[0m
+
+Test case
+,Testing api: '/api/antifraud/suspicious-ip'
+cExpectations: 'A user with role MERCHANT must not have access to GET /api/antifraud/suspicious-ip'
+-----
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
+[1;31m
+Start test 59[0m
+
+Test case
+,Testing api: '/api/antifraud/suspicious-ip'
+iExpectations: 'A user with role ADMINISTRATOR must not have access to POST /api/antifraud/suspicious-ip'
+-----
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
 [1;31m
 Start test 60[0m
 
 Test case
- Testing api: '/api/auth/access'
-SExpectations: 'A user with role MERCHANT must not have access to /api/auth/access'
+,Testing api: '/api/antifraud/suspicious-ip'
+dExpectations: 'A user with role MERCHANT must not have access to POST /api/antifraud/suspicious-ip'
 -----
-ØHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_ where userdetail0_.username=?
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
 [1;31m
 Start test 61[0m
 
 Test case
- Testing api: '/api/auth/access'
-RExpectations: 'A user with role SUPPORT must not have access to /api/auth/access'
+,Testing api: '/api/antifraud/suspicious-ip'
+kExpectations: 'A user with role ADMINISTRATOR must not have access to DELETE /api/antifraud/suspicious-ip'
 -----
-ØHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_ where userdetail0_.username=?
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
 [1;31m
 Start test 62[0m
 
 Test case
-!Testing api: '/api/auth/access/'
-TExpectations: 'A user with role MERCHANT must not have access to /api/auth/access/'
+,Testing api: '/api/antifraud/suspicious-ip'
+fExpectations: 'A user with role MERCHANT must not have access to DELETE /api/antifraud/suspicious-ip'
 -----
-ØHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_ where userdetail0_.username=?
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
 [1;31m
 Start test 63[0m
 
 Test case
-!Testing api: '/api/auth/access/'
-SExpectations: 'A user with role SUPPORT must not have access to /api/auth/access/'
+)Testing api: '/api/antifraud/stolencard'
+eExpectations: 'A user with role ADMINISTRATOR must not have access to GET /api/antifraud/stolencard'
 -----
-ØHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_ where userdetail0_.username=?
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
 [1;31m
 Start test 64[0m
 
 Test case
- Testing api: '/api/auth/access'
-TExpectations: 'A user with role ANONYMOUS must not have access to /api/auth/access'
+)Testing api: '/api/antifraud/stolencard'
+`Expectations: 'A user with role MERCHANT must not have access to GET /api/antifraud/stolencard'
 -----
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
 [1;31m
 Start test 65[0m
 
 Test case
-Testing api: '/api/auth/role'
-PExpectations: 'A user with role SUPPORT must not have access to /api/auth/role'
+)Testing api: '/api/antifraud/stolencard'
+fExpectations: 'A user with role ADMINISTRATOR must not have access to POST /api/antifraud/stolencard'
 -----
-ØHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_ where userdetail0_.username=?
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
 [1;31m
 Start test 66[0m
 
 Test case
-Testing api: '/api/auth/role'
-QExpectations: 'A user with role MERCHANT must not have access to /api/auth/role'
+)Testing api: '/api/antifraud/stolencard'
+aExpectations: 'A user with role MERCHANT must not have access to POST /api/antifraud/stolencard'
 -----
-ØHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_ where userdetail0_.username=?
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
 [1;31m
 Start test 67[0m
 
 Test case
-Testing api: '/api/auth/role'
-RExpectations: 'A user with role ANONYMOUS must not have access to /api/auth/role'
+)Testing api: '/api/antifraud/stolencard'
+hExpectations: 'A user with role ADMINISTRATOR must not have access to DELETE /api/antifraud/stolencard'
 -----
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
 [1;31m
 Start test 68[0m
 
 Test case
-Testing api: '/api/auth/role/'
-QExpectations: 'A user with role SUPPORT must not have access to /api/auth/role/'
+)Testing api: '/api/antifraud/stolencard'
+cExpectations: 'A user with role MERCHANT must not have access to DELETE /api/antifraud/stolencard'
 -----
-ØHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_ where userdetail0_.username=?
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
 [1;31m
 Start test 69[0m
 
 Test case
-Testing api: '/api/auth/role/'
-RExpectations: 'A user with role MERCHANT must not have access to /api/auth/role/'
+,Testing api: '/api/antifraud/suspicious-ip'
+7Expectations: 'Endpoint must respond with empty array'
 -----
-ØHibernate: select userdetail0_.id as id1_0_, userdetail0_.is_account_non_locked as is_accou2_0_, userdetail0_.name as name3_0_, userdetail0_.password as password4_0_, userdetail0_.role as role5_0_, userdetail0_.username as username6_0_ from user_details_impl userdetail0_ where userdetail0_.username=?
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
+EHibernate: select ip0_.id as id1_1_, ip0_.ip as ip2_1_ from ip ip0_
+[1;31m
+Start test 70[0m
+
+Test case
+,Testing api: '/api/antifraud/suspicious-ip'
+/Expectations: 'IP must be added to Black List'
+-----
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
+UHibernate: select ip0_.id as id1_1_, ip0_.ip as ip2_1_ from ip ip0_ where ip0_.ip=?
+5Hibernate: insert into ip (id, ip) values (null, ?)
+[1;31m
+Start test 71[0m
+
+Test case
+,Testing api: '/api/antifraud/suspicious-ip'
+gExpectations: 'If IP already in database,  endpoint must respond with the HTTP Conflict status (409).'
+-----
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
+UHibernate: select ip0_.id as id1_1_, ip0_.ip as ip2_1_ from ip ip0_ where ip0_.ip=?
+[1;31m
+Start test 72[0m
+
+Test case
+,Testing api: '/api/antifraud/suspicious-ip'
+\Expectations: 'If IP doesn't have right format, respond with HTTP Bad Request status (400)'
+-----
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
+[1;31m
+Start test 73[0m
+
+Test case
+,Testing api: '/api/antifraud/suspicious-ip'
+\Expectations: 'If IP doesn't have right format, respond with HTTP Bad Request status (400)'
+-----
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
+[1;31m
+Start test 74[0m
+
+Test case
+,Testing api: '/api/antifraud/suspicious-ip'
+/Expectations: 'IP must be added to Black List'
+-----
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
+UHibernate: select ip0_.id as id1_1_, ip0_.ip as ip2_1_ from ip ip0_ where ip0_.ip=?
+5Hibernate: insert into ip (id, ip) values (null, ?)
+[1;31m
+Start test 75[0m
+
+Test case
+,Testing api: '/api/antifraud/suspicious-ip'
+7Expectations: 'Endpoint must responds with Black List'
+-----
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
+EHibernate: select ip0_.id as id1_1_, ip0_.ip as ip2_1_ from ip ip0_
+[1;31m
+Start test 76[0m
+
+Test case
+,Testing api: '/api/antifraud/suspicious-ip'
+3Expectations: 'IP must be removed from Black List'
+-----
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
+UHibernate: select ip0_.id as id1_1_, ip0_.ip as ip2_1_ from ip ip0_ where ip0_.ip=?
+&Hibernate: delete from ip where id=?
+[1;31m
+Start test 77[0m
+
+Test case
+,Testing api: '/api/antifraud/suspicious-ip'
+[Expectations: 'If IP not found in database, respond with the HTTP Not Found status (404).'
+-----
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
+UHibernate: select ip0_.id as id1_1_, ip0_.ip as ip2_1_ from ip ip0_ where ip0_.ip=?
+[1;31m
+Start test 78[0m
+
+Test case
+,Testing api: '/api/antifraud/suspicious-ip'
+\Expectations: 'If IP doesn't have right format, respond with HTTP Bad Request status (400)'
+-----
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
+[1;31m
+Start test 79[0m
+
+Test case
+,Testing api: '/api/antifraud/suspicious-ip'
+3Expectations: 'IP must be removed from Black List'
+-----
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
+EHibernate: select ip0_.id as id1_1_, ip0_.ip as ip2_1_ from ip ip0_
+[1;31m
+Start test 80[0m
+
+Test case
+)Testing api: '/api/antifraud/stolencard'
+7Expectations: 'Endpoint must respond with empty array'
+-----
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
+UHibernate: select card0_.id as id1_0_, card0_.number as number2_0_ from card card0_
+[1;31m
+Start test 81[0m
+
+Test case
+)Testing api: '/api/antifraud/stolencard'
+3Expectations: 'A card must be added to Black List'
+-----
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
+kHibernate: select card0_.id as id1_0_, card0_.number as number2_0_ from card card0_ where card0_.number=?
+;Hibernate: insert into card (id, number) values (null, ?)
+[1;31m
+Start test 82[0m
+
+Test case
+)Testing api: '/api/antifraud/stolencard'
+oExpectations: 'If card-number already in database, endpoint must respond with the HTTP Conflict status (409).'
+-----
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
+kHibernate: select card0_.id as id1_0_, card0_.number as number2_0_ from card card0_ where card0_.number=?
+[1;31m
+Start test 83[0m
+
+Test case
+)Testing api: '/api/antifraud/stolencard'
+tExpectations: 'If card-number doesn't have right format, endpoint must respond with HTTP Bad Request status (400).'
+-----
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
+kHibernate: select card0_.id as id1_0_, card0_.number as number2_0_ from card card0_ where card0_.number=?
+[1;31m
+Start test 84[0m
+
+Test case
+)Testing api: '/api/antifraud/stolencard'
+oExpectations: 'If checksum of card-number is wrong, endpoint must respond with HTTP Bad Request status (400).'
+-----
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
+kHibernate: select card0_.id as id1_0_, card0_.number as number2_0_ from card card0_ where card0_.number=?
+[1;31m
+Start test 85[0m
+
+Test case
+)Testing api: '/api/antifraud/stolencard'
+3Expectations: 'A card must be added to Black List'
+-----
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
+kHibernate: select card0_.id as id1_0_, card0_.number as number2_0_ from card card0_ where card0_.number=?
+;Hibernate: insert into card (id, number) values (null, ?)
+[1;31m
+Start test 86[0m
+
+Test case
+)Testing api: '/api/antifraud/stolencard'
+7Expectations: 'Endpoint must responds with Black List'
+-----
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
+UHibernate: select card0_.id as id1_0_, card0_.number as number2_0_ from card card0_
+[1;31m
+Start test 87[0m
+
+Test case
+)Testing api: '/api/antifraud/stolencard'
+5Expectations: 'Card must be removed from Black List'
+-----
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
+kHibernate: select card0_.id as id1_0_, card0_.number as number2_0_ from card card0_ where card0_.number=?
+(Hibernate: delete from card where id=?
+[1;31m
+Start test 88[0m
+
+Test case
+)Testing api: '/api/antifraud/stolencard'
+dExpectations: 'If card-number not found in database, respond with the HTTP Not Found status (404).'
+-----
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
+kHibernate: select card0_.id as id1_0_, card0_.number as number2_0_ from card card0_ where card0_.number=?
+[1;31m
+Start test 89[0m
+
+Test case
+)Testing api: '/api/antifraud/stolencard'
+tExpectations: 'If card-number doesn't have right format, endpoint must respond with HTTP Bad Request status (400).'
+-----
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
+[1;31m
+Start test 90[0m
+
+Test case
+)Testing api: '/api/antifraud/stolencard'
+5Expectations: 'Card must be removed from Black List'
+-----
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
+UHibernate: select card0_.id as id1_0_, card0_.number as number2_0_ from card card0_
+[1;31m
+Start test 91[0m
+
+Test case
+*Testing api: '/api/antifraud/transaction'
+MExpectations: 'Transaction must be PROHIBITED due to - suspicious ip reason'
+-----
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
+UHibernate: select ip0_.id as id1_1_, ip0_.ip as ip2_1_ from ip ip0_ where ip0_.ip=?
+kHibernate: select card0_.id as id1_0_, card0_.number as number2_0_ from card card0_ where card0_.number=?
+[1;31m
+Start test 92[0m
+
+Test case
+*Testing api: '/api/antifraud/transaction'
+KExpectations: 'Transaction must be PROHIBITED due to - stolen card reason'
+-----
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
+UHibernate: select ip0_.id as id1_1_, ip0_.ip as ip2_1_ from ip ip0_ where ip0_.ip=?
+kHibernate: select card0_.id as id1_0_, card0_.number as number2_0_ from card card0_ where card0_.number=?
+[1;31m
+Start test 93[0m
+
+Test case
+*Testing api: '/api/antifraud/transaction'
+[Expectations: 'Transaction must be PROHIBITED due to - stolen card, suspicious ip reasons'
+-----
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
+UHibernate: select ip0_.id as id1_1_, ip0_.ip as ip2_1_ from ip ip0_ where ip0_.ip=?
+kHibernate: select card0_.id as id1_0_, card0_.number as number2_0_ from card card0_ where card0_.number=?
+[1;31m
+Start test 94[0m
+
+Test case
+*Testing api: '/api/antifraud/transaction'
+cExpectations: 'Transaction must be PROHIBITED due to - amount, stolen card, suspicious ip reasons'
+-----
+ØHibernate: select userdetail0_.id as id1_2_, userdetail0_.is_account_non_locked as is_accou2_2_, userdetail0_.name as name3_2_, userdetail0_.password as password4_2_, userdetail0_.role as role5_2_, userdetail0_.username as username6_2_ from user_details_impl userdetail0_ where userdetail0_.username=?
+UHibernate: select ip0_.id as id1_1_, ip0_.ip as ip2_1_ from ip ip0_ where ip0_.ip=?
+kHibernate: select card0_.id as id1_0_, card0_.number as number2_0_ from card card0_ where card0_.number=?
