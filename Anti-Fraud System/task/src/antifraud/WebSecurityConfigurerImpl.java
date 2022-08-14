@@ -29,11 +29,12 @@ public class WebSecurityConfigurerImpl extends WebSecurityConfigurerAdapter {
                 .authorizeRequests() // manage access
                 .mvcMatchers(HttpMethod.POST, "/api/auth/user").permitAll()
                 .mvcMatchers("/actuator/shutdown").permitAll() // needs to run test
-                .mvcMatchers("/api/auth/user/**", "api/auth/access", "api/auth/role").hasRole(RoleType.ROLE_ADMINISTRATOR.getRoleName())
-                .mvcMatchers(HttpMethod.GET, "/api/auth/list").hasAnyRole(RoleType.ROLE_ADMINISTRATOR.getRoleName(), RoleType.ROLE_SUPPORT.getRoleName())
-                .mvcMatchers(HttpMethod.POST, "/api/antifraud/transaction").hasRole(RoleType.ROLE_MERCHANT.getRoleName())
-                .mvcMatchers(HttpMethod.POST, "/api/antifraud/access").hasRole(RoleType.ROLE_ADMINISTRATOR.getRoleName())
-                .mvcMatchers("/api/antifraud/suspicious-ip/**", "/api/antifraud/stolencard/**").hasRole(RoleType.ROLE_SUPPORT.getRoleName())
+                .mvcMatchers("/api/auth/user/**", "api/auth/access", "api/auth/role").hasRole(RoleType.ADMINISTRATOR.toString())
+                .mvcMatchers(HttpMethod.GET, "/api/auth/list").hasAnyRole(RoleType.ADMINISTRATOR.toString(), RoleType.SUPPORT.toString())
+                .mvcMatchers(HttpMethod.POST, "/api/antifraud/transaction").hasRole(RoleType.MERCHANT.toString())
+                .mvcMatchers(HttpMethod.PUT, "/api/antifraud/transaction").hasRole(RoleType.SUPPORT.toString())
+                .mvcMatchers(HttpMethod.POST, "/api/antifraud/access").hasRole(RoleType.ADMINISTRATOR.toString())
+                .mvcMatchers("/api/antifraud/suspicious-ip/**", "/api/antifraud/stolencard/**", "/api/antifraud/history/**").hasRole(RoleType.SUPPORT.toString())
                 .and()
                 .sessionManagement()
                 .sessionCreationPolicy(SessionCreationPolicy.STATELESS); // no session

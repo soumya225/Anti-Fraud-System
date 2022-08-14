@@ -34,10 +34,10 @@ public class AuthController {
         RoleType userRole;
 
         if(userDetailsService.getAllUsers().isEmpty()) {
-            userRole = RoleType.ROLE_ADMINISTRATOR;
+            userRole = RoleType.ADMINISTRATOR;
             user.setAccountNonLocked(true);
         } else {
-            userRole = RoleType.ROLE_MERCHANT;
+            userRole = RoleType.MERCHANT;
         }
 
         user.setRole(userRole);
@@ -50,7 +50,7 @@ public class AuthController {
             return new ResponseEntity<>(new UserInfoReceipt(user.getId(),
                     user.getName(),
                     user.getUsername(),
-                    userRole.getRoleName()), HttpStatus.CREATED);
+                    userRole.toString()), HttpStatus.CREATED);
         }
 
     }
@@ -95,15 +95,15 @@ public class AuthController {
 
             boolean accountNonLocked;
 
-            if(changeAccess.getOperation().equals(Operation.LOCK.toString())) {
+            if(changeAccess.getOperation().equals(Operation.LOCK)) {
                 if(userDetails.getAuthorities().stream()
                         .map(GrantedAuthority::getAuthority)
-                        .anyMatch(r -> r.equals(RoleType.ROLE_ADMINISTRATOR.toString()))) {
+                        .anyMatch(r -> r.equals(RoleType.ADMINISTRATOR.getRoleName()))) {
                     return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
                 }
                 operation = "locked";
                 accountNonLocked = false;
-            } else if (changeAccess.getOperation().equals(Operation.UNLOCK.toString())) {
+            } else if (changeAccess.getOperation().equals(Operation.UNLOCK)) {
                 operation = "unlocked";
                 accountNonLocked = true;
             } else {
@@ -128,20 +128,13 @@ public class AuthController {
         try {
             UserDetailsImpl userDetails = userDetailsService.loadUserByUsername(changeRole.getUsername());
 
-            RoleType roleType = null;
-            for (RoleType r: RoleType.values()) {
-                if(changeRole.getRole().equals(r.getRoleName())
-                    && !changeRole.getRole().equals(RoleType.ROLE_ADMINISTRATOR.getRoleName())) {
-                    roleType = r;
-                }
-            }
 
-            if(roleType == null) {
+            if(changeRole.getRole().equals(RoleType.ADMINISTRATOR)) {
                 return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
             }
 
             try {
-                userDetailsService.changeRole(userDetails, roleType);
+                userDetailsService.changeRole(userDetails, changeRole.getRole());
             } catch (IllegalArgumentException e) {
                 return new ResponseEntity<>(HttpStatus.CONFLICT);
             }
@@ -149,7 +142,7 @@ public class AuthController {
             return new ResponseEntity<>(new UserInfoReceipt(userDetails.getId(),
                     userDetails.getName(),
                     userDetails.getUsername(),
-                    roleType.getRoleName()), HttpStatus.OK);
+                    changeRole.getRole().toString()), HttpStatus.OK);
 
         } catch (UsernameNotFoundException e) {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);

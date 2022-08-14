@@ -14,7 +14,7 @@ public class Transaction {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Long transactionId;
 
     @NotNull
     @Min(1)
@@ -30,9 +30,12 @@ public class Transaction {
     @Enumerated(EnumType.STRING)
     private WorldRegionCode region;
 
-//    @Pattern(regexp = "\\d{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(?:(?:([01]?\\d|2[0-3]):)?([0-5]?\\d):)?([0-5]?\\d)")
     @DateTimeFormat(pattern = "yyyy-MM-ddTHH:mm:ss")
     private LocalDateTime date;
+
+    private TransactionResult result;
+
+    private String feedback = "";
 
     public Long getAmount() {
         return amount;
@@ -46,8 +49,8 @@ public class Transaction {
         return number;
     }
 
-    public Long getId() {
-        return id;
+    public Long getTransactionId() {
+        return transactionId;
     }
 
     public WorldRegionCode getRegion() {
@@ -58,10 +61,26 @@ public class Transaction {
         return date;
     }
 
+    public TransactionResult getResult() {
+        return result;
+    }
+
+    public void setResult(TransactionResult result) {
+        this.result = result;
+    }
+
+    public String getFeedback() {
+        return feedback;
+    }
+
+    public void setFeedback(String feedback) {
+        this.feedback = feedback;
+    }
+
     @Override
     public String toString() {
         return "Transaction{" +
-                "id=" + id +
+                "id=" + transactionId +
                 ", amount=" + amount +
                 ", ip='" + ip + '\'' +
                 ", number='" + number + '\'' +

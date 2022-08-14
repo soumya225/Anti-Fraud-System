@@ -77,7 +77,7 @@ public class UserDetailsImpl implements UserDetails {
     }
 
     public void setRole(RoleType roleType) {
-        this.role = new SimpleGrantedAuthority(roleType.toString());
+        this.role = new SimpleGrantedAuthority(roleType.getRoleName());
     }
 
     public void setName(String name) {

@@ -1,9 +1,9 @@
 package antifraud.models;
 
 public enum RoleType {
-    ROLE_ADMINISTRATOR("ADMINISTRATOR"),
-    ROLE_MERCHANT("MERCHANT"),
-    ROLE_SUPPORT("SUPPORT");
+    ADMINISTRATOR("ROLE_ADMINISTRATOR"),
+    MERCHANT("ROLE_MERCHANT"),
+    SUPPORT("ROLE_SUPPORT");
 
     private final String roleName;
 

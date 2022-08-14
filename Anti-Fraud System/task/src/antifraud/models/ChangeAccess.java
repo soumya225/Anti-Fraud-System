@@ -7,14 +7,13 @@ public class ChangeAccess {
     @NotBlank
     private String username;
 
-    @NotBlank
-    private String operation;
+    private Operation operation;
 
     public String getUsername() {
         return username;
     }
 
-    public String getOperation() {
+    public Operation getOperation() {
         return operation;
     }
 

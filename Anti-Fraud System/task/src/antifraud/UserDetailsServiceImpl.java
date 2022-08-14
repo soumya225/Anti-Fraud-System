@@ -59,7 +59,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
     public void changeRole(UserDetailsImpl user, RoleType roleType) throws IllegalArgumentException {
         if(user.getAuthorities().stream()
                 .map(GrantedAuthority::getAuthority)
-                .anyMatch(r -> r.equals(roleType.toString()))) {
+                .anyMatch(r -> r.equals(roleType.getRoleName()))) {
             throw new IllegalArgumentException();
         }
 

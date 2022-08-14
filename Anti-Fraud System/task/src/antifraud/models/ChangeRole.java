@@ -7,14 +7,13 @@ public class ChangeRole {
     @NotBlank
     private String username;
 
-    @NotBlank
-    private String role;
+    private RoleType role;
 
     public String getUsername() {
         return username;
     }
 
-    public String getRole() {
+    public RoleType getRole() {
         return role;
     }
 }

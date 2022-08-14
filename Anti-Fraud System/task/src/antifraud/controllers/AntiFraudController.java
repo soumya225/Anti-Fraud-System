@@ -1,12 +1,10 @@
 package antifraud.controllers;
 
-import antifraud.models.Card;
-import antifraud.models.IP;
-import antifraud.models.Transaction;
-import antifraud.models.WorldRegionCode;
+import antifraud.models.*;
 import antifraud.repositories.CardRepository;
 import antifraud.repositories.IPRepository;
 import antifraud.repositories.TransactionRepository;
+import antifraud.repositories.ValueRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -31,11 +29,10 @@ public class AntiFraudController {
     @Autowired
     TransactionRepository transactionRepository;
 
-    enum TransactionResult {
-        ALLOWED,
-        MANUAL_PROCESSING,
-        PROHIBITED;
-    }
+    @Autowired
+    ValueRepository valueRepository;
+
+
 
     @PostMapping("/transaction")
     public ResponseEntity<Map<String, String>> checkTransaction(@RequestBody @Valid Transaction transaction) {
@@ -44,9 +41,28 @@ public class AntiFraudController {
         List<String> reasonListManual = new ArrayList<>();
         List<String> reasonListProhibited = new ArrayList<>();
 
-        if(transaction.getAmount() <= 200) {
+
+        Optional<Value> maxAllowedOptional = valueRepository.findById("maxAllowed");
+        Optional<Value> maxManualOptional = valueRepository.findById("maxManual");
+
+        int maxAllowed = 200;
+        int maxManual = 1500;
+
+        if(maxAllowedOptional.isEmpty()) {
+            valueRepository.save(new Value ("maxAllowed", maxAllowed));
+        } else {
+            maxAllowed = maxAllowedOptional.get().getValue();
+        }
+
+        if(maxManualOptional.isEmpty()) {
+            valueRepository.save(new Value ("maxManual", maxManual));
+        } else {
+            maxManual = maxManualOptional.get().getValue();
+        }
+
+        if(transaction.getAmount() <= maxAllowed) {
             result = TransactionResult.ALLOWED;
-        } else if (transaction.getAmount() <= 1500) {
+        } else if (transaction.getAmount() <= maxManual) {
             result = TransactionResult.MANUAL_PROCESSING;
             reasonListManual.add("amount");
         } else {
@@ -99,6 +115,8 @@ public class AntiFraudController {
 
         }
 
+        transaction.setResult(result);
+
         transactionRepository.save(transaction);
 
         String info = "none";
@@ -114,6 +132,99 @@ public class AntiFraudController {
 
         return new ResponseEntity<>(map, HttpStatus.OK);
 
+    }
+
+    @PutMapping("/transaction")
+    public ResponseEntity<Transaction> addFeedback(@RequestBody @Valid Feedback feedback) {
+        Optional<Transaction> transactionOptional = transactionRepository.findById(feedback.getTransactionId());
+
+        if(transactionOptional.isEmpty()) {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+
+        Transaction transaction = transactionOptional.get();
+
+        if(!transaction.getFeedback().equals("")) {
+            return new ResponseEntity<>(HttpStatus.CONFLICT);
+        }
+
+        if(feedback.getFeedback().equals(transaction.getResult())) {
+            return new ResponseEntity<>(HttpStatus.UNPROCESSABLE_ENTITY);
+        }
+
+        Optional<Value> maxAllowedOptional = valueRepository.findById("maxAllowed");
+        Optional<Value> maxManualOptional = valueRepository.findById("maxManual");
+
+        Value maxAllowed = maxAllowedOptional.orElse(new Value ("maxAllowed", 200));
+        Value maxManual = maxManualOptional.orElse(new Value("maxManual", 1500));
+
+
+        switch (transaction.getResult()) {
+            case ALLOWED:
+                switch(feedback.getFeedback()) {
+                    case MANUAL_PROCESSING:
+                        maxAllowed.setValue(decreaseLimit(maxAllowed.getValue(), transaction.getAmount()));
+                        break;
+                    case PROHIBITED:
+                        maxManual.setValue(decreaseLimit(maxManual.getValue(), transaction.getAmount()));
+                        maxAllowed.setValue(decreaseLimit(maxAllowed.getValue(), transaction.getAmount()));
+                        break;
+                }
+                break;
+            case MANUAL_PROCESSING:
+                switch(feedback.getFeedback()) {
+                    case ALLOWED:
+                        maxAllowed.setValue(increaseLimit(maxAllowed.getValue(), transaction.getAmount()));
+                        break;
+                    case PROHIBITED:
+                        maxManual.setValue(decreaseLimit(maxManual.getValue(), transaction.getAmount()));
+                        break;
+                }
+                break;
+            case PROHIBITED:
+                switch (feedback.getFeedback()) {
+                    case ALLOWED:
+                        maxManual.setValue(increaseLimit(maxManual.getValue(), transaction.getAmount()));
+                        maxAllowed.setValue(increaseLimit(maxAllowed.getValue(), transaction.getAmount()));
+                        break;
+                    case MANUAL_PROCESSING:
+                        maxManual.setValue(increaseLimit(maxManual.getValue(), transaction.getAmount()));
+                        break;
+                }
+                break;
+        }
+
+        valueRepository.save(maxAllowed);
+        valueRepository.save(maxManual);
+
+        transaction.setFeedback(feedback.getFeedback().toString());
+        transactionRepository.save(transaction);
+
+        return new ResponseEntity<>(transaction, HttpStatus.OK);
+    }
+
+    @GetMapping("/history")
+    public ResponseEntity<List<Transaction>> getHistory() {
+        List<Transaction> transactionList = new ArrayList<>();
+
+        transactionRepository.findAll().forEach(transactionList::add);
+
+        return new ResponseEntity<>(transactionList, HttpStatus.OK);
+    }
+
+    @GetMapping("/history/{number}")
+    public ResponseEntity<List<Transaction>> getHistoryByNumber(@PathVariable String number) {
+        if(!Card.isValid(number)) {
+            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+        }
+
+        List<Transaction> transactionList = transactionRepository.findAllByNumber(number);
+
+        if(transactionList.isEmpty()){
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+
+        return new ResponseEntity<>(transactionList, HttpStatus.OK);
     }
 
     @PostMapping("/suspicious-ip")
@@ -202,5 +313,13 @@ public class AntiFraudController {
         cardRepository.findAll().forEach(cardList::add);
 
         return new ResponseEntity<>(cardList, HttpStatus.OK);
+    }
+
+    private int increaseLimit(int limit, long valueFromTransaction) {
+        return (int) Math.ceil(0.8 * limit + 0.2 * valueFromTransaction);
+    }
+
+    private int decreaseLimit(int limit, long valueFromTransaction) {
+        return (int) Math.ceil(0.8 * limit - 0.2 * valueFromTransaction);
     }
 }
